@@ -1,0 +1,244 @@
+
+
+.main {
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-template-rows: 20% 80%;
+    height: 100vh;
+    width: 100%;
+    row-gap: 0%;
+    column-gap: 0%;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px);
+  */
+}
+
+.top {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.left2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    /*  */
+    /* grid-template-rows: at; */
+}
+
+.partOne {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #E63946;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 17% 50% 33%;
+}
+.Logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 50%;
+    justify-self: center;
+    border-radius: 30%;
+    box-shadow: 6px 6px 6px 6px #A8DADC
+}
+
+.lock {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+    width: 65%;
+    box-shadow: 4.5px 4.5px 4.5px 4.5px #31587A;
+    border-radius: 50%;
+    border: 10px solid #274769;
+}
+
+#partTwo {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #CDEAE5;
+    display: grid;
+    grid-template-columns: 1% 20% 20% 20% 20% 1%;
+    grid-template-rows: 15% 30% 15% 40%;
+    column-gap: 3%;
+    row-gap: 15%;
+}
+
+.top,
+.right,
+.right2,
+.left,
+.left2 {
+    filter: blur(100%);
+    -webkit-filter: blur(8px);
+    background-color: #EFCAC4;
+}
+
+.H_first {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: H_first;
+    align-self: center;
+    justify-self: center;
+    /* font-size: 5vw; */
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@font-face {
+    font-family: H_first;
+    src: url(../style/Skranji-Bold.ttf);
+}
+
+@keyframes color {
+    0% {
+        color: #CF3B4B;
+    }
+    25% {
+        color: #874058;
+    }
+    50% {
+        color: #574461;
+    }
+    75% {
+        color: #3F4665;
+    }
+    100% {
+        color: #274769;
+    }
+    to {
+        transform: scale(1.09);
+    }
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 1.5vw;
+    font-family: H_Second;
+    animation-name: color;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+
+@font-face {
+    font-family: H_Second;
+    src: url(../style/Mooli-Regular.ttf);
+}
+
+#easy,
+#normal,
+#hard,
+#impenetrable {
+    border-radius: 50%;
+    border-bottom: #76AAAE;
+    border-top: #76AAAE;
+    border-left: #76AAAE;
+    border-right: #76AAAE;
+    background-color: #63B1BB;
+    color: #D13440;
+    font-size: 1.6vw;
+    font-style: italic;
+    /* column-gap: 100px; */
+    justify-self: center;
+    width: 100%;
+    box-shadow: 6px 6px 6px 6px #1D3557
+}
+
+#impenetrable {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#hard {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#normal {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#easy {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#password {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 70% 30%;
+    border: dotted 3px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 90% 5% ;
+    animation-name: colorTwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+#Text_password {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 3vw;
+    color: #566781;
+justify-self: center;
+
+}
+@keyframes colorTwo {
+    0% {
+        color: #90C3CD;
+    }
+    25% {
+        color: #EC9A9A;
+    }
+    50% {
+        color: #BE2F3A;
+    }
+    75% {
+        color: #324766;
+    }
+    100% {
+        color: #9CCFD5;
+    }
+    
+}
